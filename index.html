@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Andri</title>
-    <link href="dist/output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
     <style>
         .drop-shadow-bottom {
           filter: drop-shadow(10px 5px 15px rgba(246, 246, 247, 0.5));
@@ -17,7 +17,7 @@
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
-                    <a href="#home" class="font-bold text-xl text-black block py-6 rounded-xl  hover:shadow-lg hover:opacity-70 transition duration-300 ease-in-out lg:text-3xl">AndriRamadoni</a>
+                    <a href="#home" class="font-bold text-xl text-black block py-6 rounded-xl  hover:shadow-lg hover:opacity-70 transition duration-300 ease-in-out lg:text-3xl">AR</a>
                 </div>
                 <div class="flex items-center px-4">
                     <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
@@ -87,7 +87,7 @@
                 </div>
                 <div class="w-full px-4 lg:w-1/2 ">
                     <div class="relative mt-0 lg:mt-9 lg:right-0 drop-shadow-bottom ">
-                        <img src="dist/fotoheroandrinobg.png" alt="Andri" class="max-w-full mx-auto lg:w-1/2 drop-shadow-bottom animate-pulse">
+                        <img src="dist/fotoheroandrinobg.png" alt="Andri" class="max-w-full mx-auto lg:w-1/2 drop-shadow-bottom animate-pulse lg:hidden">
                         <!-- <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2">
                             <svg width="300" height="500" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="lg:w-auto lg:h-auto motion-safe:animate-pulse" >
                                 <path fill="#1e3a8a" d="M10.4,-21.3C14.1,-15.8,18.3,-14.4,23.7,-11.5C29.1,-8.7,35.6,-4.3,44.8,5.3C53.9,14.9,65.6,29.8,62.9,37.2C60.2,44.7,43,44.7,30.1,46C17.2,47.2,8.6,49.6,-2,53C-12.6,56.4,-25.1,60.8,-28.2,54C-31.3,47.1,-25,28.9,-27.8,18.1C-30.6,7.2,-42.6,3.6,-49.8,-4.2C-57,-11.9,-59.5,-23.9,-54,-30.1C-48.5,-36.3,-35,-36.8,-24.7,-38.5C-14.4,-40.2,-7.2,-43.1,-1.9,-39.7C3.3,-36.4,6.6,-26.8,10.4,-21.3Z" transform="translate(100 100)" />
@@ -106,14 +106,14 @@
 
     <!-- About Section Start -->
     <section id="about" class="bg-slate-500 px-3 pt-3">
-        <div class="relative lg:-mt-16 pt-3 pb-3 container bg-slate-800 rounded-xl shadow-2xl">
+        <div class="relative lg:-mt-16 pt-3 pb-8 lg:pb-3 container bg-slate-800 rounded-xl shadow-2xl">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10 lg:w-1/2">
                     <h4 class="font-bold uppercase text-primary text-lg mb-3">About Me</h4>
                     <h2 class="font-bold text-white text-3xl mb-5 max-w-md lg:text-4xl">I'm Fresh Graduate</h2>
-                    <p class="font-medium text-base text-stone-300 lg:text-lg">I am a passionate fresh graduate with expertise in front-end development. With in-depth knowledge of HTML, CSS, and JavaScript, I can create engaging and responsive user interfaces. As a front-end developer, I possess the ability to implement designs with precision and optimize user experiences. I am ready to contribute and continuously learn in the ever-evolving world of technology industry.</p>
+                    <p class="font-medium text-base text-stone-300 lg:text-sm">I am the head of the IT unit at Ar-Royyan Hospital in Indralaya, Palembang. My responsibilities include ensuring high-quality and efficient healthcare services for patients. I am committed to continuously improving the standards of service at this hospital. Additionally, I work as a freelance front-end developer.</p>
                 </div>
-                <div class="w-full px-4 lg:w-1/2">
+                <div class="w-full px-4 lg:w-1/3">
                     <h3 class="font-semibold text-white text-2xl mb-5 lg:text-3xl lg:pt-10">Let's be friends!</h3>
                     <p class="font-medium text-base text-stone-300 mb-5 lg:text-sm">"Come join me on my social media journey and let's be friends! Follow me on my social media to get exciting updates and have fun together!"</p>
                     <div class="flex items-center">
@@ -139,6 +139,10 @@
                         </a>
                     </div>
                 </div>
+                <div class="w-full px-2 lg:w-1/6 hidden bg-primary shadow-[0_0_10px_white] lg:block rounded-xl animate-pulse">
+                    <img src="dist/fotoheroandrinobg.png" class="object-cover w-full h-full" alt="">
+
+                </div>
             </div>
         </div>
     </section>
@@ -155,7 +159,7 @@
             
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 px-11 lg:px-36">
                 <!-- Komponen kiri (HTML dan CSS) -->
-                <div class="w-full bg-gray-200 p-4 rounded-lg dark:bg-gray-700">
+                <div class="w-full bg-slate-400 p-4 rounded-lg dark:bg-gray-700">
                     <div class="flex justify-between items-center mb-2">
                         <span class="font-medium text-base text-white">
                             <svg role="img" class="h-6 w-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HTML5</title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
@@ -163,57 +167,57 @@
                         <span class="text-sm font-medium dark:text-white">85%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-white initial-div transition-width duration-1000 ease-out">
-                        <div class="bg-primary shadow-[0_0_20px_blue] h-2.5 rounded-full" style="width: 85%"></div>
+                        <div class="bg-primary shadow-[0_0_20px_white] h-2.5 rounded-full" style="width: 85%"></div>
                     </div>
                 </div>
-                <div class="w-full bg-gray-200 p-4 rounded-lg dark:bg-gray-700">
+                <div class="w-full bg-slate-400 p-4 rounded-lg dark:bg-gray-700">
                     <div class="flex justify-between items-center mb-2">
                         <span class="font-medium text-base text-white"><svg role="img" class="h-6 w-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CSS3</title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg></span>
                         <span class="text-sm font-medium dark:text-white">85%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-white initial-div transition-width duration-1000 ease-out">
-                        <div class="bg-primary shadow-[0_0_20px_blue] h-2.5 rounded-full" style="width: 85%"></div>
+                        <div class="bg-primary shadow-[0_0_20px_white] h-2.5 rounded-full" style="width: 85%"></div>
                     </div>
                 </div>
     
                 <!-- Komponen kanan (JavaScript dan Figma) -->
-                <div class="w-full bg-gray-200 rounded-lg p-4 dark:bg-gray-700">
+                <div class="w-full bg-slate-400 rounded-lg p-4 dark:bg-gray-700">
                     <div class="flex justify-between items-center mb-2 ">
                         <span class="font-medium text-base text-white"><svg role="img" class="h-6 w-6 fill-current"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>JavaScript</title><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg></span>
                         <span class="text-sm font-medium dark:text-white">80%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-white initial-div transition-width duration-1000 ease-out">
-                        <div class="bg-primary shadow-[0_0_20px_blue] h-2.5 rounded-full" style="width: 80%"></div>
+                        <div class="bg-primary shadow-[0_0_20px_white] h-2.5 rounded-full" style="width: 80%"></div>
                     </div>
                 </div>
 
-                <div class="w-full bg-gray-200 p-4 rounded-lg dark:bg-gray-700">
+                <div class="w-full bg-slate-400 p-4 rounded-lg dark:bg-gray-700">
                     <div class="flex justify-between items-center mb-2">
                         <span class="font-medium text-base text-white"><svg role="img" class="h-6 w-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Figma</title><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z"/></svg></span>
                         <span class="text-sm font-medium dark:text-white">80%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-white initial-div transition-width duration-1000 ease-out">
-                        <div class="bg-primary shadow-[0_0_20px_blue] h-2.5 rounded-full" style="width: 80%"></div>
+                        <div class="bg-primary shadow-[0_0_20px_white] h-2.5 rounded-full" style="width: 80%"></div>
                     </div>
                 </div>
 
-                <div class="w-full bg-gray-200 p-4 rounded-lg dark:bg-gray-700">
+                <div class="w-full bg-slate-400 p-4 rounded-lg dark:bg-gray-700">
                     <div class="flex justify-between items-center mb-2">
                         <span class="font-medium text-base text-white"><svg role="img" class="h-6 w-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Tailwind CSS</title><path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/></svg></span>
-                        <span class="text-sm font-medium dark:text-white">75%</span>
+                        <span class="text-sm font-medium dark:text-white">85%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-white initial-div transition-width duration-1000 ease-out">
-                        <div class="bg-primary shadow-[0_0_20px_blue] h-2.5 rounded-full" style="width: 75%"></div>
+                        <div class="bg-primary shadow-[0_0_20px_white] h-2.5 rounded-full" style="width: 85%"></div>
                     </div>
                 </div>
 
-                <div class="w-full bg-gray-200 p-4 rounded-lg dark:bg-gray-700">
+                <div class="w-full bg-slate-400 p-4 rounded-lg dark:bg-gray-700">
                     <div class="flex justify-between items-center mb-2">
                         <span class="font-medium text-base text-white"><svg role="img" class="h-6 w-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Bootstrap</title><path d="M11.77 11.24H9.956V8.202h2.152c1.17 0 1.834.522 1.834 1.466 0 1.008-.773 1.572-2.174 1.572zm.324 1.206H9.957v3.348h2.231c1.459 0 2.232-.585 2.232-1.685s-.795-1.663-2.326-1.663zM24 11.39v1.218c-1.128.108-1.817.944-2.226 2.268-.407 1.319-.463 2.937-.42 4.186.045 1.3-.968 2.5-2.337 2.5H4.985c-1.37 0-2.383-1.2-2.337-2.5.043-1.249-.013-2.867-.42-4.186-.41-1.324-1.1-2.16-2.228-2.268V11.39c1.128-.108 1.819-.944 2.227-2.268.408-1.319.464-2.937.42-4.186-.045-1.3.968-2.5 2.338-2.5h14.032c1.37 0 2.382 1.2 2.337 2.5-.043 1.249.013 2.867.42 4.186.409 1.324 1.098 2.16 2.226 2.268zm-7.927 2.817c0-1.354-.953-2.333-2.368-2.488v-.057c1.04-.169 1.856-1.135 1.856-2.213 0-1.537-1.213-2.538-3.062-2.538h-4.16v10.172h4.181c2.218 0 3.553-1.086 3.553-2.876z"/></svg></span>
                         <span class="text-sm font-medium dark:text-white">85%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-white initial-div transition-width duration-1000 ease-out">
-                        <div class="bg-primary shadow-[0_0_20px_blue] h-2.5 rounded-full" style="width: 85%"></div>
+                        <div class="bg-primary shadow-[0_0_20px_white] h-2.5 rounded-full" style="width: 85%"></div>
                     </div>
                 </div>
             </div>
@@ -269,9 +273,9 @@
 
     <!-- Contact Section Start -->
     <section id="contact" class=" flex justify-center items-center  px-5 pt-36 pb-32 bg-slate-500">
-        <div class="px-16 lg:px-36 w-full lg:w-1/2 rounded-xl bg-slate-900 lg:rounded-2xl shadow-2xl">
-            <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16 pt-8">
+        <div class="px-8 lg:px-24 w-full lg:w-1/2 rounded-xl bg-slate-900 lg:rounded-2xl shadow-2xl">
+            <div class="w-full">
+                <div class="max-w-sm mx-auto text-center mb-16 pt-8">
                     <h4 class="font-semibold text-lg text-primary mb-2 lg:text-xl">Contact Me</h4>
                     <p class="font-sans text-sm text-stone-300">Unleash the potential of your website display and get an engaging, interactive, and responsive visual experience to present an unforgettable impression to visitors. I'm ready to make your design dreams come true. Contact me now for an inspiring and innovative collaboration!</p>
                 </div>

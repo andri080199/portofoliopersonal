@@ -31,26 +31,30 @@ function isElementInViewport(el) {
     );
 }
 
-const textToType = "Front End Developer";
-        const typedElement = document.getElementById("typed-text");
-        let charIndex = 0;
+const textsToType = ["Front End Developer", "Hospital IT"];
+let textIndex = 0;
+let charIndex = 0;
 
-        function typeText() {
-            if (charIndex < textToType.length) {
-                typedElement.textContent += textToType.charAt(charIndex);
-                charIndex++;
-                setTimeout(typeText, 100); // Delay 100ms between each character typing
-            } else {
-                // Setelah selesai diketik, hapus teks dan mulai lagi
-                setTimeout(() => {
-                    typedElement.textContent = "";
-                    charIndex = 0;
-                    typeText();
-                }, 2000); // Delay 2000ms (2 detik) sebelum mulai lagi
-            }
-        }
+const typedElement = document.getElementById("typed-text");
 
-        typeText();
+function typeText() {
+    if (charIndex < textsToType[textIndex].length) {
+        typedElement.textContent += textsToType[textIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeText, 100); // Delay 100ms between each character typing
+    } else {
+        // Setelah selesai diketik, hapus teks dan mulai lagi dengan teks baru
+        setTimeout(() => {
+            typedElement.textContent = "";
+            charIndex = 0;
+            textIndex = (textIndex + 1) % textsToType.length; // Ganti ke teks berikutnya
+            typeText();
+        }, 2000); // Delay 2000ms (2 detik) sebelum mulai lagi
+    }
+}
+
+typeText();
+
 
 // Fungsi untuk memulai animasi saat elemen muncul di dalam viewport
 function animateOnScroll() {
